@@ -1,0 +1,51 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Fill.Color = claWhite
+    Position.X = 168.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 297.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+    object Label1: TLabel
+      Align = Client
+      Locked = True
+      Size.Width = 297.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Button 1'
+      Visible = False
+      TabOrder = 0
+    end
+    object AniIndicator1: TAniIndicator
+      Align = Center
+    end
+  end
+  object btnStart: TButton
+    Position.X = 72.000000000000000000
+    Position.Y = 32.000000000000000000
+    TabOrder = 2
+    Text = 'Start'
+    OnClick = btnStartClick
+  end
+  object btnStop: TButton
+    Position.X = 240.000000000000000000
+    Position.Y = 32.000000000000000000
+    TabOrder = 1
+    Text = 'Stop'
+    OnClick = btnStopClick
+  end
+end
